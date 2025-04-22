@@ -41,5 +41,6 @@ jobs:
         name: test-reports
         path: build/reports/tests/test/*
 
-    - name: Run Deployment
-      run: java -jar build/libs/PlayWordle.jar
+    - name: Run Deployment with Mock Input
+      run: |
+        echo -e "apple\nbrick\ncrane\ndelta\neagle\nfifty" | java -jar build/libs/PlayWordle.jar
