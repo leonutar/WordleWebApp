@@ -43,4 +43,5 @@ jobs:
 
     - name: Run Deployment with Mock Input
       run: |
-        echo -e "apple\nbrick\ncrane\ndelta\neagle\nfifty\nYes" | java -jar build/libs/PlayWordle.jar
+        echo -e "apple\nbrick\ncrane\ndelta\neagle\nfifty\nYes\napple\n" | java -jar build/libs/PlayWordle.jar
+
